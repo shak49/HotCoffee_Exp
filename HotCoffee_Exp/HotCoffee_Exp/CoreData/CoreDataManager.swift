@@ -20,7 +20,7 @@ class CoreDataManager {
     }
     
     // MARK:    Functions
-    func save(name: String, type: String) {
+    func saveOrder(name: String, type: String) {
         let order = Order(context: self.objectContext)
         order.name = name
         order.type = type
@@ -32,7 +32,7 @@ class CoreDataManager {
         }
     }
     
-    func read() -> [Order] {
+    func readOrders() -> [Order] {
         var orders = [Order]()
         let orderRequest: NSFetchRequest<Order> = Order.fetchRequest()
         do {
@@ -43,11 +43,30 @@ class CoreDataManager {
         return orders
     }
     
-    func update() {
+    func updateOrder() {
         
     }
     
-    func delete() {
-        
+    func deleteOrder(name: String) {
+        do {
+            if let order = readOrder(name: name) {
+                self.objectContext.delete(order)
+                try self.objectContext.save()
+            }
+        } catch let error as NSError {
+            print(error)
+        }
+    }
+    
+    private func readOrder(name: String) -> Order? {
+        var orders = [Order]()
+        let request: NSFetchRequest<Order> = Order.fetchRequest()
+        request.predicate = NSPredicate(format: "name == %@", name)
+        do {
+            orders = try self.objectContext.fetch(request)
+        } catch let error as NSError {
+            print(error)
+        }
+        return orders.first
     }
 }

@@ -30,7 +30,12 @@ class OrderListViewModel: ObservableObject {
     
     // MARK:    Functions
     func readOrders() {
-        self.orders = CoreDataManager.shared.read().map(OrderViewModel.init)
+        self.orders = CoreDataManager.shared.readOrders().map(OrderViewModel.init)
         print(orders)
+    }
+    
+    func deleteOrder(model: OrderViewModel) {
+        CoreDataManager.shared.deleteOrder(name: model.name)
+        readOrders()
     }
 }

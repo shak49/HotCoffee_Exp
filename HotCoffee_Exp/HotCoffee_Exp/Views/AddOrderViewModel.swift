@@ -15,7 +15,7 @@ class AddOrderViewModel {
     
     // MARK:    Functions
     func createOrder() {
-        CoreDataManager.shared.save(name: self.name, type: self.type)
+        CoreDataManager.shared.saveOrder(name: self.name, type: self.type)
     }
     
     

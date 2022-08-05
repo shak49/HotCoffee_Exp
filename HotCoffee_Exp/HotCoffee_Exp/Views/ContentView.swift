@@ -29,6 +29,7 @@ struct ContentView: View {
                             .padding([.leading], 10)
                     }
                 }
+                .onDelete(perform: delete)
             }
             .sheet(isPresented: $isPresented, onDismiss: {
                 print("ON DISMISS")
@@ -41,6 +42,13 @@ struct ContentView: View {
             })
             .listStyle(.plain)
             .navigationTitle(Text("Orders"))
+        }
+    }
+    
+    private func delete(at indexes: IndexSet) {
+        indexes.forEach { index in
+            let model = self.model.orders[index]
+            self.model.deleteOrder(model: model)
         }
     }
 }
