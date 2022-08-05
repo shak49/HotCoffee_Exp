@@ -21,7 +21,7 @@ class OrderViewModel {
 
 class OrderListViewModel: ObservableObject {
     // MARK:    Properties
-    var orders = [OrderViewModel]()
+    @Published var orders = [OrderViewModel]()
     
     // MARK:    Lifecylces
     init() {
@@ -31,5 +31,6 @@ class OrderListViewModel: ObservableObject {
     // MARK:    Functions
     func readOrders() {
         self.orders = CoreDataManager.shared.read().map(OrderViewModel.init)
+        print(orders)
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6D46831E289D6FD8007FB56D /* HotCoffee_ExpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46831D289D6FD8007FB56D /* HotCoffee_ExpApp.swift */; };
-		6D468322289D6FDA007FB56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D468321289D6FDA007FB56D /* Assets.xcassets */; };
 		6D468325289D6FDA007FB56D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D468324289D6FDA007FB56D /* Preview Assets.xcassets */; };
 		6D468327289D6FDA007FB56D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D468326289D6FDA007FB56D /* Persistence.swift */; };
 		6D46832A289D6FDA007FB56D /* HotCoffee_Exp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D468328289D6FDA007FB56D /* HotCoffee_Exp.xcdatamodeld */; };
@@ -18,12 +17,12 @@
 		6D468339289D7B91007FB56D /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D468338289D7B91007FB56D /* AddOrderViewModel.swift */; };
 		6D46833B289D7BE2007FB56D /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46833A289D7BE2007FB56D /* AddOrderView.swift */; };
 		6D46833D289D933F007FB56D /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46833C289D933F007FB56D /* OrderListViewModel.swift */; };
+		6D46833F289D9748007FB56D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D46833E289D9748007FB56D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D46831A289D6FD8007FB56D /* HotCoffee_Exp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCoffee_Exp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D46831D289D6FD8007FB56D /* HotCoffee_ExpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCoffee_ExpApp.swift; sourceTree = "<group>"; };
-		6D468321289D6FDA007FB56D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D468324289D6FDA007FB56D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6D468326289D6FDA007FB56D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		6D468329289D6FDA007FB56D /* HotCoffee_Exp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HotCoffee_Exp.xcdatamodel; sourceTree = "<group>"; };
@@ -33,6 +32,7 @@
 		6D468338289D7B91007FB56D /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
 		6D46833A289D7BE2007FB56D /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
 		6D46833C289D933F007FB56D /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
+		6D46833E289D9748007FB56D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,6 @@
 				6D46831D289D6FD8007FB56D /* HotCoffee_ExpApp.swift */,
 				6D468332289D777D007FB56D /* CoreData */,
 				6D468333289D7869007FB56D /* Views */,
-				6D468321289D6FDA007FB56D /* Assets.xcassets */,
 				6D468323289D6FDA007FB56D /* Preview Content */,
 			);
 			path = HotCoffee_Exp;
@@ -97,9 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				6D468330289D7058007FB56D /* ContentView.swift */,
+				6D46833C289D933F007FB56D /* OrderListViewModel.swift */,
 				6D46833A289D7BE2007FB56D /* AddOrderView.swift */,
 				6D468338289D7B91007FB56D /* AddOrderViewModel.swift */,
-				6D46833C289D933F007FB56D /* OrderListViewModel.swift */,
+				6D46833E289D9748007FB56D /* Assets.xcassets */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,8 +162,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D46833F289D9748007FB56D /* Assets.xcassets in Resources */,
 				6D468325289D6FDA007FB56D /* Preview Assets.xcassets in Resources */,
-				6D468322289D6FDA007FB56D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

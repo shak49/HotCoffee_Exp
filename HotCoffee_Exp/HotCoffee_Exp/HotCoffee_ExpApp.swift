@@ -13,8 +13,8 @@ struct HotCoffee_ExpApp: App {
 
     var body: some Scene {
         WindowGroup {
-            //ContentView()
-            AddOrderView()
+            ContentView()
+            //AddOrderView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
