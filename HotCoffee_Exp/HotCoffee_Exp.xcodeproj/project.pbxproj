@@ -13,6 +13,11 @@
 		6D468327289D6FDA007FB56D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D468326289D6FDA007FB56D /* Persistence.swift */; };
 		6D46832A289D6FDA007FB56D /* HotCoffee_Exp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6D468328289D6FDA007FB56D /* HotCoffee_Exp.xcdatamodeld */; };
 		6D468331289D7058007FB56D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D468330289D7058007FB56D /* ContentView.swift */; };
+		6D468335289D789B007FB56D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D468334289D789B007FB56D /* CoreDataManager.swift */; };
+		6D468337289D79E8007FB56D /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D468336289D79E8007FB56D /* NSManagedObjectContext.swift */; };
+		6D468339289D7B91007FB56D /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D468338289D7B91007FB56D /* AddOrderViewModel.swift */; };
+		6D46833B289D7BE2007FB56D /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46833A289D7BE2007FB56D /* AddOrderView.swift */; };
+		6D46833D289D933F007FB56D /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D46833C289D933F007FB56D /* OrderListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		6D468326289D6FDA007FB56D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		6D468329289D6FDA007FB56D /* HotCoffee_Exp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HotCoffee_Exp.xcdatamodel; sourceTree = "<group>"; };
 		6D468330289D7058007FB56D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D468334289D789B007FB56D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		6D468336289D79E8007FB56D /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContext.swift; sourceTree = "<group>"; };
+		6D468338289D7B91007FB56D /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
+		6D46833A289D7BE2007FB56D /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
+		6D46833C289D933F007FB56D /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				6D46831D289D6FD8007FB56D /* HotCoffee_ExpApp.swift */,
-				6D468330289D7058007FB56D /* ContentView.swift */,
+				6D468332289D777D007FB56D /* CoreData */,
+				6D468333289D7869007FB56D /* Views */,
 				6D468321289D6FDA007FB56D /* Assets.xcassets */,
-				6D468326289D6FDA007FB56D /* Persistence.swift */,
-				6D468328289D6FDA007FB56D /* HotCoffee_Exp.xcdatamodeld */,
 				6D468323289D6FDA007FB56D /* Preview Content */,
 			);
 			path = HotCoffee_Exp;
@@ -71,6 +80,28 @@
 				6D468324289D6FDA007FB56D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D468332289D777D007FB56D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6D468328289D6FDA007FB56D /* HotCoffee_Exp.xcdatamodeld */,
+				6D468326289D6FDA007FB56D /* Persistence.swift */,
+				6D468334289D789B007FB56D /* CoreDataManager.swift */,
+				6D468336289D79E8007FB56D /* NSManagedObjectContext.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		6D468333289D7869007FB56D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D468330289D7058007FB56D /* ContentView.swift */,
+				6D46833A289D7BE2007FB56D /* AddOrderView.swift */,
+				6D468338289D7B91007FB56D /* AddOrderViewModel.swift */,
+				6D46833C289D933F007FB56D /* OrderListViewModel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +175,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D468327289D6FDA007FB56D /* Persistence.swift in Sources */,
+				6D468337289D79E8007FB56D /* NSManagedObjectContext.swift in Sources */,
 				6D46832A289D6FDA007FB56D /* HotCoffee_Exp.xcdatamodeld in Sources */,
+				6D46833D289D933F007FB56D /* OrderListViewModel.swift in Sources */,
 				6D468331289D7058007FB56D /* ContentView.swift in Sources */,
+				6D468335289D789B007FB56D /* CoreDataManager.swift in Sources */,
+				6D46833B289D7BE2007FB56D /* AddOrderView.swift in Sources */,
+				6D468339289D7B91007FB56D /* AddOrderViewModel.swift in Sources */,
 				6D46831E289D6FD8007FB56D /* HotCoffee_ExpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
